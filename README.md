@@ -1,53 +1,87 @@
 ````markdown
-# Análise de Emoções com DeepFace
+<h1 align="center">🧠🎭 Análise de Emoções com DeepFace</h1>
 
-Este projeto realiza a **análise automática de expressões faciais** utilizando o modelo `DeepFace`, aplicando-o em imagens que representam as **emoções básicas de Ekman**. As imagens são baixadas diretamente de repositórios gratuitos, como o Freepik.
+<p align="center">
+  <img src="https://img.shields.io/badge/python-3.8%2B-blue" alt="Python Version">
+  <img src="https://img.shields.io/badge/deepface-Emotion%20Recognition-red" alt="DeepFace">
+  <img src="https://img.shields.io/badge/license-MIT-green" alt="License">
+</p>
 
-## 📄 Arquivo Principal
+---
 
-- `main.py`: script responsável por baixar imagens representando sete emoções básicas, analisá-las com DeepFace e exibir os resultados esperados e detectados.
+## 🧾 **Descrição**
 
-## 🎯 Objetivo
+Este projeto realiza a **análise automática de expressões faciais** utilizando o modelo `DeepFace`, com imagens representando as **emoções básicas de Ekman**. As imagens são obtidas de repositórios gratuitos, como o Freepik.
 
-Demonstrar a capacidade do modelo DeepFace em identificar corretamente as emoções **disgust, happy, sad, angry, surprise, neutral e fear**, comparando os resultados com os rótulos esperados.
+---
 
-## 🔧 Tecnologias e Bibliotecas Utilizadas
+## 🗂️ **Arquivo Principal**
 
-- [Python 3.x](https://www.python.org/)
-- [DeepFace](https://github.com/serengil/deepface)
-- [OpenCV (cv2)](https://opencv.org/)
-- [Requests](https://docs.python-requests.org/)
-- [Matplotlib](https://matplotlib.org/)
+- 📄 `main.py`  
+  Script responsável por:
+  - Baixar imagens que representam as 7 emoções básicas
+  - Analisar com DeepFace
+  - Exibir o resultado visual das emoções esperadas e detectadas
 
-## 📦 Instalação
+---
 
-Antes de executar o script, certifique-se de ter as bibliotecas necessárias instaladas. Você pode instalá-las com o seguinte comando:
+## 🎯 **Objetivo**
+
+Exibir a capacidade do modelo **DeepFace** em identificar corretamente:
+
+> 😠 **Angry** · 🤢 **Disgust** · 😨 **Fear** · 😀 **Happy** · 😐 **Neutral** · 😢 **Sad** · 😲 **Surprise**
+
+---
+
+## 🔧 **Tecnologias e Bibliotecas Utilizadas**
+
+| Ferramenta  | Descrição                              |
+|-------------|------------------------------------------|
+| 🐍 Python   | Linguagem principal                     |
+| 🧠 DeepFace | Reconhecimento facial e emoção          |
+| 📸 OpenCV   | Leitura e conversão de imagens          |
+| 🌐 Requests | Download de imagens online              |
+| 📊 Matplotlib | Visualização dos resultados            |
+
+---
+
+## 💻 **Instalação**
+
+1. Clone o repositório:
+```bash
+git clone https://github.com/seu-usuario/seu-repo.git
+cd seu-repo
+````
+
+2. Instale as dependências:
 
 ```bash
 pip install deepface opencv-python matplotlib requests
-````
+```
 
-> **Nota**: Pode ser necessário instalar também o `tensorflow` compatível com o DeepFace, por exemplo:
+> ⚠️ **Nota:** Pode ser necessário instalar uma versão específica do TensorFlow compatível:
 
 ```bash
 pip install tensorflow==2.11.0
 ```
 
-## ▶️ Execução
+---
 
-Execute o script com:
+## ▶️ **Como Executar**
 
 ```bash
 python main.py
 ```
 
-O script irá:
+📌 O script irá:
 
-1. Baixar imagens de cada emoção (se ainda não estiverem salvas).
-2. Utilizar o DeepFace para detectar a emoção dominante em cada imagem.
-3. Exibir a imagem, a emoção esperada e a emoção detectada.
+1. 📥 Baixar imagens de cada emoção (caso ainda não existam)
+2. 🔍 Detectar a emoção dominante usando DeepFace
+3. 🖼️ Exibir imagem, emoção esperada e emoção detectada
 
-## 📂 Estrutura de Pastas
+---
+
+## 📁 **Estrutura de Diretórios**
 
 ```
 📁 emotion_images/
@@ -62,14 +96,27 @@ main.py
 README.md
 ```
 
-## 📌 Observações
+---
 
-* A acurácia da detecção pode variar com base na qualidade, iluminação e pose da imagem.
-* O DeepFace retorna uma análise probabilística da emoção dominante.
-* A imagem é processada uma por vez e exibida via `matplotlib`.
+## ⚠️ **Observações**
 
-## 📚 Referências
+* 🧪 A precisão pode variar de acordo com a iluminação, pose e resolução da imagem
+* 🤖 DeepFace retorna a **emoção dominante com maior probabilidade**
+* 🖼️ Imagens são exibidas uma por uma com `matplotlib`
 
-* Ekman, P. (1999). **Basic Emotions**. In: Dalgleish & Power (Eds), *Handbook of Cognition and Emotion*.
-* Serengil, S. I., & Ozpinar, A. (2020). **LightFace: A Hybrid Deep Face Recognition Framework**. *DeepFace* [https://github.com/serengil/deepface](https://github.com/serengil/deepface)
+---
+
+## 📚 **Referências**
+
+* 📘 **Ekman, P.** (1999). *Basic Emotions*. In: Dalgleish & Power (Eds), *Handbook of Cognition and Emotion*.
+* 🧠 **Serengil, S. I.**, & **Ozpinar, A.** (2020). *LightFace: A Hybrid Deep Face Recognition Framework*. [DeepFace GitHub](https://github.com/serengil/deepface)
+
+---
+
+## 👨‍💻 Autor
+
+**Vitor Amadeu Souza**
+📍 Nova Iguaçu, RJ
+📧 \[[seu-email@email.com](mailto:seu-email@email.com)]
+🔗 [github.com/seu-usuario](https://github.com/seu-usuario)
 
